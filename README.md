@@ -1,35 +1,100 @@
-# PySentinel: Automated Web Intelligence & System Monitor
+# \# PySentinel: Automated Web Intelligence \& System Monitor
 
-PySentinel is a Python-based automation engine designed to monitor web services and perform web intelligence tasks asynchronously.
+# 
 
-## Week 1 - Task 1
+# PySentinel is a Python-based automation engine designed to monitor web services and perform web intelligence tasks asynchronously.
 
-The first task implements an asynchronous service health monitoring daemon.
+# 
 
-### Features
+# \## Week 1 - Task 1
 
-- Monitor multiple web services
-- Read target URLs from a YAML configuration file
-- Asynchronous HTTP requests using asyncio and httpx
-- Display HTTP status codes
-- Measure response latency
-- Continuously monitor services at a 10-second interval
-- Display UP/DOWN service status in the terminal
+# \### Async HTTP Engine \& Service Health Monitor
 
-## Technologies Used
+# 
 
-- Python
-- asyncio
-- httpx
-- PyYAML
-- YAML
+# Features:
 
-## How to Run
+# \- Monitor multiple web services
 
-python monitor.py
+# \- Read target URLs from YAML
 
-Press Ctrl+C to stop the monitor.
+# \- Asynchronous HTTP requests using asyncio and httpx
 
-## Current Status
+# \- Display HTTP status codes
 
-Week 1 - Task 1: Completed
+# \- Measure response latency
+
+# \- Continuous service monitoring
+
+# 
+
+# \## Week 2 - Task 2
+
+# \### Web Content Scraping \& Keyword Alert Engine
+
+# 
+
+# Features:
+
+# \- Fetch webpage content asynchronously using HTTPX
+
+# \- Extract webpage text using BeautifulSoup
+
+# \- Load configurable keywords from YAML
+
+# \- Detect matching keywords
+
+# \- Store detected keywords in SQLite
+
+# \- Prevent duplicate alerts using database constraints
+
+# \- Generate alerts for newly detected keywords
+
+# 
+
+# \## Technologies Used
+
+# 
+
+# \- Python
+
+# \- asyncio
+
+# \- HTTPX
+
+# \- BeautifulSoup
+
+# \- PyYAML
+
+# \- SQLite
+
+# \- aiosqlite
+
+# 
+
+# \## Project Structure
+
+# 
+
+# ```text
+
+# PySentinel/
+
+# ├── config/
+
+# │   └── targets.yaml
+
+# ├── monitor.py
+
+# ├── scraper.py
+
+# ├── database.py
+
+# ├── keywords.yaml
+
+# ├── README.md
+
+# ├── requirements.txt
+
+# └── .gitignore
+
