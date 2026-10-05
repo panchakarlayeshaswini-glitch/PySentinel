@@ -1,0 +1,12 @@
+notifications:
+  enabled: true
+
+  threshold_ms: 1000
+
+  discord:
+    enabled: false
+    webhook_url: ""
+
+  slack:
+    enabled: false
+    webhook_url: ""

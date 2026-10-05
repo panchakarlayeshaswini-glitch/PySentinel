@@ -52,6 +52,34 @@
 
 # 
 
+# \## Week 3 - Task 3
+
+# \### Webhook Dispatcher \& Notification System
+
+# 
+
+# Features:
+
+# \- FastAPI status monitoring API
+
+# \- Health check endpoint
+
+# \- Swagger API documentation
+
+# \- Asynchronous service health checking
+
+# \- Configurable response-time thresholds
+
+# \- Alert generation when thresholds are exceeded
+
+# \- Discord-compatible webhook notification support
+
+# \- Slack-compatible webhook notification support
+
+# \- Local alert testing without exposing webhook credentials
+
+# 
+
 # \## Technologies Used
 
 # 
@@ -70,6 +98,10 @@
 
 # \- aiosqlite
 
+# \- FastAPI
+
+# \- Uvicorn
+
 # 
 
 # \## Project Structure
@@ -82,7 +114,9 @@
 
 # ├── config/
 
-# │   └── targets.yaml
+# │   ├── targets.yaml
+
+# │   └── notifications.yaml
 
 # ├── monitor.py
 
@@ -91,6 +125,12 @@
 # ├── database.py
 
 # ├── keywords.yaml
+
+# ├── notifier.py
+
+# ├── dispatcher.py
+
+# ├── api.py
 
 # ├── README.md
 
