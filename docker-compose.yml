@@ -1,0 +1,7 @@
+services:
+  pysentinel:
+    build: .
+    container_name: pysentinel
+    restart: unless-stopped
+    init: true
+    

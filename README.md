@@ -1,140 +1,38 @@
-# \# PySentinel: Automated Web Intelligence \& System Monitor
+## Week 4 - Task 4: Scheduling Daemon & Docker Packaging
 
-# 
+### Features
+- Automated service health monitoring
+- Scheduled keyword scraping
+- Configurable monitoring intervals
+- Asynchronous health checks
+- Docker image creation
+- Docker Compose container management
+- Logging of monitoring and scraping results
 
-# PySentinel is a Python-based automation engine designed to monitor web services and perform web intelligence tasks asynchronously.
+### Docker Setup
 
-# 
+Build the Docker image:
 
-# \## Week 1 - Task 1
+    docker compose build
 
-# \### Async HTTP Engine \& Service Health Monitor
+Start the application:
 
-# 
+    docker compose up -d
 
-# Features:
+View application logs:
 
-# \- Monitor multiple web services
+    docker compose logs -f
 
-# \- Read target URLs from YAML
+Check container status:
 
-# \- Asynchronous HTTP requests using asyncio and httpx
+    docker compose ps
 
-# \- Display HTTP status codes
+Stop the application:
 
-# \- Measure response latency
+    docker compose down
 
-# \- Continuous service monitoring
-
-# 
-
-# \## Week 2 - Task 2
-
-# \### Web Content Scraping \& Keyword Alert Engine
-
-# 
-
-# Features:
-
-# \- Fetch webpage content asynchronously using HTTPX
-
-# \- Extract webpage text using BeautifulSoup
-
-# \- Load configurable keywords from YAML
-
-# \- Detect matching keywords
-
-# \- Store detected keywords in SQLite
-
-# \- Prevent duplicate alerts using database constraints
-
-# \- Generate alerts for newly detected keywords
-
-# 
-
-# \## Week 3 - Task 3
-
-# \### Webhook Dispatcher \& Notification System
-
-# 
-
-# Features:
-
-# \- FastAPI status monitoring API
-
-# \- Health check endpoint
-
-# \- Swagger API documentation
-
-# \- Asynchronous service health checking
-
-# \- Configurable response-time thresholds
-
-# \- Alert generation when thresholds are exceeded
-
-# \- Discord-compatible webhook notification support
-
-# \- Slack-compatible webhook notification support
-
-# \- Local alert testing without exposing webhook credentials
-
-# 
-
-# \## Technologies Used
-
-# 
-
-# \- Python
-
-# \- asyncio
-
-# \- HTTPX
-
-# \- BeautifulSoup
-
-# \- PyYAML
-
-# \- SQLite
-
-# \- aiosqlite
-
-# \- FastAPI
-
-# \- Uvicorn
-
-# 
-
-# \## Project Structure
-
-# 
-
-# ```text
-
-# PySentinel/
-
-# ├── config/
-
-# │   ├── targets.yaml
-
-# │   └── notifications.yaml
-
-# ├── monitor.py
-
-# ├── scraper.py
-
-# ├── database.py
-
-# ├── keywords.yaml
-
-# ├── notifier.py
-
-# ├── dispatcher.py
-
-# ├── api.py
-
-# ├── README.md
-
-# ├── requirements.txt
-
-# └── .gitignore
-
+### Current Status
+- Week 1 - Task 1: Completed
+- Week 2 - Task 2: Completed
+- Week 3 - Task 3: Completed
+- Week 4 - Task 4: Implemented and Docker-tested
